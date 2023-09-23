@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "carbon-activity"
+version = "0.1.0"
+description = "Carbon Footprint Tracker"
+authors = ["Akshat Pande <akshat.pande@outlook.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+streamlit = "^1.26"
+matplotlib = "^3.8.0"
+psycopg2-binary = "^2.9.7"
+sqlalchemy = "^2.0.21"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
