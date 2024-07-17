@@ -1,16 +1,15 @@
 [tool.poetry]
 name = "carbon-activity"
 version = "0.1.0"
-description = "Carbon Footprint Tracker"
-authors = ["Akshat Pande <akshat.pande@outlook.com>"]
+description = "Calculate Carbon Activity for a Climate Conscious Future"
+authors = ["pandeakshat"]
+license = "MT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
-streamlit = "^1.26"
-matplotlib = "^3.8.0"
-psycopg2-binary = "^2.9.7"
-sqlalchemy = "^2.0.21"
+python = "^3.12"
+streamlit = "^1.36.0"
+pillow = "^10.4.0"
 
 
 [build-system]
