@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-from datetime import datetime\
+from datetime import datetime
 from PIL import Image, ImageDraw, ImageFont
 
 
@@ -169,6 +169,7 @@ if st.button('Submit'):
 
     # Define the text and font
     text = "Hello, World!"
+    text2 = "Huy"
     font_path = 'data/fonts/Montserrat-Regular.ttf'  # Path to a .ttf font file
     font_size = 100  # Increase the font size
     font = ImageFont.truetype(font_path, font_size)
@@ -181,8 +182,13 @@ if st.button('Submit'):
     y = (height - textheight) / 2
 
     # Draw the text on the image
+    draw.text((x, y-600), text, fill='black', font=font)
+    draw.text((x, y-500), text, fill='black', font=font)
+    draw.text((x, y-400), text, fill='black', font=font)
+    draw.text((x, y-300), text, fill='black', font=font)
+    draw.text((x, y-200), text, fill='black', font=font)
+    draw.text((x, y-100), text, fill='black', font=font)
     draw.text((x, y), text, fill='black', font=font)
-
     # Save the image
     output_path = 'output_image.png'
     background.save(output_path)
